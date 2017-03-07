@@ -22,16 +22,21 @@
         <ul class="adresse">
             <% for(var i=0; i<adresse.length; i++) {%>
             <li class="client">
-                <span><%= adresse[i].nom %></span>
-                <span><%= adresse[i].prenom %></span>
-                <span><%= adresse[i].telephone %></span>
-                <span><%= adresse[i].ville %></span>
-                <span><%= adresse[i].postal %></span>
+                <span contenteditable="true"><%= adresse[i].nom %></span>
+                <span contenteditable="true"><%= adresse[i].prenom %></span>
+                <span contenteditable="true"><%= adresse[i].telephone %></span>
+                <span contenteditable="true"><%= adresse[i].ville %></span>
+                <span contenteditable="true"><%= adresse[i].postal %></span>
+                <form action="/detruire/<%= adresse[i]._id %>" method="post">
+                    <button type="submit">Détruire</button>
+
+                </form>
+                <button>Modifier</button>
             </li>
             <% } %>
         </ul>
     </section>
-    <script type="text/javascript" src="modifier_adresse.js"></script>
+    <script type="text/javascript" src="js/modifier_adresse.js"></script>
 
 </body>
 </html>

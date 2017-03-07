@@ -28,7 +28,7 @@ span{
     margin: 0.5em 0;
     text-align: center;
     display: inline-block;
-    width: 19%;
+    width: 12%;
     border-right: 1px solid gray;
 }
 
@@ -38,8 +38,11 @@ ul li span:first-child{
 
 ul{
     list-style: none;
+    text-align: center;
+    width: 100%;
 }
 
 ul li{
-    width: 45em;
+    margin: 0 auto;
+    width: 100%;
 }
